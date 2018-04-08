@@ -1,0 +1,25 @@
+<template>
+    <router-link to="/home" :exact="true">
+        <startcontainer>
+            <starttext class="animated infinite pulse headertext">Welkom bij DoeZoo!</starttext>
+        </startcontainer>
+    </router-link>
+</template>
+
+<style>
+    startcontainer {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    starttext {
+        margin-top: -200px;
+    }
+</style>
+
+<script src="./start.ts"></script>
